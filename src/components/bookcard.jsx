@@ -45,7 +45,11 @@ class BookCard extends Component {
           <h6 className="card-title" style={{ textAlign: "center" }}>
             {title}
           </h6>
-          <img className="book" src={`/images/${filename}`} alt={title} />
+          <img
+            className="book"
+            src={`/react-library/images/${filename}`}
+            alt={title}
+          />
           <div>Author: {author}</div>
           <div>Number of Pages: {numberOfPages}</div>
           {checkState && (
