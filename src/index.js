@@ -7,7 +7,7 @@ import "./index.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App style={{ overflowY: "scroll" }} />
   </BrowserRouter>,
   document.getElementById("root")
